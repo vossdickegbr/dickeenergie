@@ -1,0 +1,575 @@
+{
+  "id": "pilotwoche-bonn-ippendorf-2026-07-20",
+  "title": "Pilotwoche 01 / Feldhandbuch",
+  "district": "Bonn-Ippendorf",
+  "startsOn": "2026-07-20",
+  "endsOn": "2026-07-24",
+  "workingHours": "12:00–20:30",
+  "teamSize": 2,
+  "weeklyGoal": {
+    "contracts": "8–12",
+    "tariffChecks": "70+",
+    "note": "Team-Pilotziel, keine Prognose. Qualität und Einwilligung gehen vor Stückzahl."
+  },
+  "motto": "Beratung vor Abschluss. Vertrauen vor Tempo.",
+  "sourcePdf": "/docs/pilotwoche-ippendorf.pdf",
+  "days": [
+    {
+      "id": "day-1",
+      "dayNumber": 1,
+      "weekday": "Montag",
+      "date": "2026-07-20",
+      "title": "Nordhang und Haupteinstieg",
+      "subtitle": "Sauber starten, Gesprächsqualität kalibrieren",
+      "goalText": "Heute zählt ein stabiler Prozess: vollständige Straßenseiten, klare Dokumentation und mindestens zwei saubere Abschlüsse als Teamziel.",
+      "goals": [
+        {
+          "label": "Türen",
+          "value": "180",
+          "caption": "Team-Ziel"
+        },
+        {
+          "label": "Tarifchecks",
+          "value": "12",
+          "caption": "Qualifizierte Checks"
+        },
+        {
+          "label": "Verträge",
+          "value": "2",
+          "caption": "Saubere Abschlüsse"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "12:00",
+          "label": "Startklar",
+          "detail": "Material, Gebiet und Rollen in 20 Minuten festziehen."
+        },
+        {
+          "time": "12:20",
+          "label": "Ruhiger Einstieg",
+          "detail": "Homeoffice, Rentner und erste vollständige Straßenseite."
+        },
+        {
+          "time": "14:30",
+          "label": "Kurzstopp",
+          "detail": "15 Minuten trinken, Kontakte markieren, keine langen Pausen."
+        },
+        {
+          "time": "14:45",
+          "label": "Zweiter Block",
+          "detail": "Pflichtstrecke ohne Sprünge weiterarbeiten."
+        },
+        {
+          "time": "17:00",
+          "label": "Reset",
+          "detail": "20 Minuten Pause, Einwandlage vergleichen, Material ergänzen."
+        },
+        {
+          "time": "17:20",
+          "label": "Hauptzeit",
+          "detail": "Gesprächsqualität hochhalten; heiße Kontakte sofort markieren."
+        },
+        {
+          "time": "20:00",
+          "label": "Keine neuen Türen",
+          "detail": "Nur vereinbarte Rückkehr; danach Statistik bis 20:30."
+        }
+      ],
+      "analysis": {
+        "chance": "Etablierte Wohnlage mit vielen Einzeladressen und guter Orientierung entlang einer klaren Nord-Süd-Achse.",
+        "risk": "Größere Grundstücke senken die Schlagzahl; auf der Hauptachse nicht zwischen Straßenseiten springen.",
+        "tactic": "Partner teilen nur gut einsehbare Straßenseiten. In ruhigeren Nebenstraßen gemeinsam im Wechsel arbeiten."
+      },
+      "start": "Fridtjof-Nansen-Straße / Melbweg",
+      "end": "Im Eichholz / Ippendorfer Allee",
+      "housePointEstimate": "ca. 247 Hausnummerpunkte im Pflichtbereich",
+      "streets": [
+        "Fridtjof-Nansen-Straße",
+        "Melbweg",
+        "Trierer Straße",
+        "Am Lappenweiher",
+        "Stationsweg",
+        "Ippendorfer Allee 2–72",
+        "Im Eichholz"
+      ],
+      "routeNote": "Konsequent von Nord nach Süd. Die lange Ippendorfer Allee nur im markierten Nummernbereich bearbeiten.",
+      "fieldRule": "Nur geeignete Ein-, Zwei- und Reihenhäuser priorisieren. Mehrfamilienhäuser und Gewerbe auslassen.",
+      "mapRoutes": [
+        {
+          "label": "Gesamtroute",
+          "stops": [
+            "Fridtjof-Nansen-Straße, Bonn",
+            "Melbweg, Bonn",
+            "Trierer Straße, Bonn-Ippendorf",
+            "Am Lappenweiher, Bonn",
+            "Stationsweg, Bonn-Ippendorf",
+            "Ippendorfer Allee, Bonn",
+            "Im Eichholz, Bonn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "dayNumber": 2,
+      "weekday": "Dienstag",
+      "date": "2026-07-21",
+      "title": "Westliche Eigentümerlage",
+      "subtitle": "Kompakte Seitenstraßen mit hoher Priorität",
+      "goalText": "Die stärkste Hypothese der Pilotwoche testen: ruhige, etablierte Seitenstraßen mit Ein-, Doppel- und Reihenhäusern konsequent vollständig abarbeiten.",
+      "goals": [
+        {
+          "label": "Türen",
+          "value": "210",
+          "caption": "Team-Ziel"
+        },
+        {
+          "label": "Tarifchecks",
+          "value": "15",
+          "caption": "Qualifizierte Checks"
+        },
+        {
+          "label": "Verträge",
+          "value": "2",
+          "caption": "Saubere Abschlüsse"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "12:00",
+          "label": "Startklar",
+          "detail": "Material, Gebiet und Rollen in 20 Minuten festziehen."
+        },
+        {
+          "time": "12:20",
+          "label": "Ruhiger Einstieg",
+          "detail": "Homeoffice, Rentner und erste vollständige Straßenseite."
+        },
+        {
+          "time": "14:30",
+          "label": "Kurzstopp",
+          "detail": "15 Minuten trinken, Kontakte markieren, keine langen Pausen."
+        },
+        {
+          "time": "14:45",
+          "label": "Zweiter Block",
+          "detail": "Pflichtstrecke ohne Sprünge weiterarbeiten."
+        },
+        {
+          "time": "17:00",
+          "label": "Reset",
+          "detail": "20 Minuten Pause, Einwandlage vergleichen, Material ergänzen."
+        },
+        {
+          "time": "17:20",
+          "label": "Hauptzeit",
+          "detail": "Gesprächsqualität hochhalten; heiße Kontakte sofort markieren."
+        },
+        {
+          "time": "20:00",
+          "label": "Keine neuen Türen",
+          "detail": "Nur vereinbarte Rückkehr; danach Statistik bis 20:30."
+        }
+      ],
+      "analysis": {
+        "chance": "Viele kurze Übergänge und eine für Beratung gut geeignete, überwiegend ruhige Wohnstruktur.",
+        "risk": "An Hängen und in Stichstraßen entstehen schnell Doppelwege, wenn offene Häuser nicht sauber markiert werden.",
+        "tactic": "Jede Stichstraße hinein auf einer Seite, zurück auf der anderen. Offene Kontakte nicht sofort erneut anlaufen."
+      },
+      "start": "Im Acker / Ippendorfer Allee",
+      "end": "Am Kurfürstenkreuz / Röttgener Straße",
+      "housePointEstimate": "ca. 294 Hausnummerpunkte im Pflichtbereich",
+      "streets": [
+        "Im Acker",
+        "Am Sonnenhang",
+        "Ligusterweg",
+        "Am Höhnchen",
+        "Gerhard-Krause-Weg",
+        "Lengsdorfer Straße",
+        "Erich-Böger-Straße",
+        "Auf dem Steinchen",
+        "Auf dem Heidgen",
+        "Am Kurfürstenkreuz"
+      ],
+      "routeNote": "In einem Bogen von Nordwest nach Süd arbeiten. Stichstraßen immer sofort vollständig schließen.",
+      "fieldRule": "Nur geeignete Ein-, Zwei- und Reihenhäuser priorisieren. Mehrfamilienhäuser und Gewerbe auslassen.",
+      "mapRoutes": [
+        {
+          "label": "Gesamtroute",
+          "stops": [
+            "Im Acker, Bonn",
+            "Am Sonnenhang, Bonn",
+            "Ligusterweg, Bonn",
+            "Am Höhnchen, Bonn",
+            "Gerhard-Krause-Weg, Bonn",
+            "Lengsdorfer Straße, Bonn",
+            "Erich-Böger-Straße, Bonn",
+            "Auf dem Steinchen, Bonn",
+            "Auf dem Heidgen, Bonn",
+            "Am Kurfürstenkreuz, Bonn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "dayNumber": 3,
+      "weekday": "Mittwoch",
+      "date": "2026-07-22",
+      "title": "Zentraler Ostbogen",
+      "subtitle": "Kurze Übergänge, hohe Gesprächsdichte",
+      "goalText": "Das zentrale Wohngebiet ohne Zickzack bearbeiten. Ziel sind sechs vollständige Beratungen und ein belastbarer Nachfasspool für Freitag.",
+      "goals": [
+        {
+          "label": "Türen",
+          "value": "210",
+          "caption": "Team-Ziel"
+        },
+        {
+          "label": "Tarifchecks",
+          "value": "15",
+          "caption": "Qualifizierte Checks"
+        },
+        {
+          "label": "Verträge",
+          "value": "2",
+          "caption": "Saubere Abschlüsse"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "12:00",
+          "label": "Startklar",
+          "detail": "Material, Gebiet und Rollen in 20 Minuten festziehen."
+        },
+        {
+          "time": "12:20",
+          "label": "Ruhiger Einstieg",
+          "detail": "Homeoffice, Rentner und erste vollständige Straßenseite."
+        },
+        {
+          "time": "14:30",
+          "label": "Kurzstopp",
+          "detail": "15 Minuten trinken, Kontakte markieren, keine langen Pausen."
+        },
+        {
+          "time": "14:45",
+          "label": "Zweiter Block",
+          "detail": "Pflichtstrecke ohne Sprünge weiterarbeiten."
+        },
+        {
+          "time": "17:00",
+          "label": "Reset",
+          "detail": "20 Minuten Pause, Einwandlage vergleichen, Material ergänzen."
+        },
+        {
+          "time": "17:20",
+          "label": "Hauptzeit",
+          "detail": "Gesprächsqualität hochhalten; heiße Kontakte sofort markieren."
+        },
+        {
+          "time": "20:00",
+          "label": "Keine neuen Türen",
+          "detail": "Nur vereinbarte Rückkehr; danach Statistik bis 20:30."
+        }
+      ],
+      "analysis": {
+        "chance": "Dichtes Straßennetz mit vielen kurzen Wegen und mehreren klar abgrenzbaren Mikrogebieten.",
+        "risk": "Ähnliche Straßennamen und Parallelstraßen erhöhen die Gefahr, Abschnitte doppelt oder gar nicht zu bearbeiten.",
+        "tactic": "Nach jeder Straße gemeinsam abhaken. Den Wechsel zwischen den beiden Kartenabschnitten bewusst als Reset nutzen."
+      },
+      "start": "Am Engelsbach / Ippendorfer Allee",
+      "end": "Peter-Ohlenhardt-Straße / Buchholzstraße",
+      "housePointEstimate": "ca. 304 Hausnummerpunkte im Pflichtbereich",
+      "streets": [
+        "Am Engelsbach",
+        "Am Engelspfad",
+        "Im Uckerfeld",
+        "Lückingstraße",
+        "Ferdinandstraße",
+        "Im Blumengarten",
+        "Michael-Leveilly-Straße",
+        "Karl-Friedrich-Schinkel-Straße",
+        "Balthasar-Neumann-Straße",
+        "Luigi-Pirandello-Straße",
+        "Auf dem Essig",
+        "Peter-Ohlenhardt-Straße"
+      ],
+      "routeNote": "Erst den Nordteil, dann den Architektenbogen, zuletzt die südlichen kurzen Straßen. Keine Querwechsel zurück.",
+      "fieldRule": "Nur geeignete Ein-, Zwei- und Reihenhäuser priorisieren. Mehrfamilienhäuser und Gewerbe auslassen.",
+      "mapRoutes": [
+        {
+          "label": "Route A",
+          "stops": [
+            "Am Engelsbach, Bonn",
+            "Am Engelspfad, Bonn",
+            "Im Uckerfeld, Bonn",
+            "Lückingstraße, Bonn",
+            "Ferdinandstraße, Bonn",
+            "Im Blumengarten, Bonn"
+          ]
+        },
+        {
+          "label": "Route B",
+          "stops": [
+            "Michael-Leveilly-Straße, Bonn",
+            "Karl-Friedrich-Schinkel-Straße, Bonn",
+            "Balthasar-Neumann-Straße, Bonn",
+            "Luigi-Pirandello-Straße, Bonn",
+            "Auf dem Essig, Bonn",
+            "Peter-Ohlenhardt-Straße, Bonn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "dayNumber": 4,
+      "weekday": "Donnerstag",
+      "date": "2026-07-23",
+      "title": "Südost-Cluster",
+      "subtitle": "Höchste Türdichte der Woche",
+      "goalText": "Heute wird Tempo mit Disziplin kombiniert: zwei klar getrennte Routenteile, keine Nebenwege außerhalb der Liste und konsequentes Zeitmanagement.",
+      "goals": [
+        {
+          "label": "Türen",
+          "value": "240",
+          "caption": "Team-Ziel"
+        },
+        {
+          "label": "Tarifchecks",
+          "value": "17",
+          "caption": "Qualifizierte Checks"
+        },
+        {
+          "label": "Verträge",
+          "value": "2–3",
+          "caption": "Saubere Abschlüsse"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "12:00",
+          "label": "Startklar",
+          "detail": "Material, Gebiet und Rollen in 20 Minuten festziehen."
+        },
+        {
+          "time": "12:20",
+          "label": "Ruhiger Einstieg",
+          "detail": "Homeoffice, Rentner und erste vollständige Straßenseite."
+        },
+        {
+          "time": "14:30",
+          "label": "Kurzstopp",
+          "detail": "15 Minuten trinken, Kontakte markieren, keine langen Pausen."
+        },
+        {
+          "time": "14:45",
+          "label": "Zweiter Block",
+          "detail": "Pflichtstrecke ohne Sprünge weiterarbeiten."
+        },
+        {
+          "time": "17:00",
+          "label": "Reset",
+          "detail": "20 Minuten Pause, Einwandlage vergleichen, Material ergänzen."
+        },
+        {
+          "time": "17:20",
+          "label": "Hauptzeit",
+          "detail": "Gesprächsqualität hochhalten; heiße Kontakte sofort markieren."
+        },
+        {
+          "time": "20:00",
+          "label": "Keine neuen Türen",
+          "detail": "Nur vereinbarte Rückkehr; danach Statistik bis 20:30."
+        }
+      ],
+      "analysis": {
+        "chance": "Kompakte Wohnstraßen und hohe Adressdichte ermöglichen die beste Türleistung der Woche.",
+        "risk": "Zu hohes Tempo senkt Beratungsqualität. Mehrfamilienhäuser und unpassende Objekte sofort auslassen.",
+        "tactic": "90-Minuten-Sprints mit kurzem Abgleich. Ab 18:00 keine Zusatzstraßen öffnen, wenn Route B noch nicht begonnen ist."
+      },
+      "start": "Buchholzstraße / Röttgener Straße",
+      "end": "Netzestraße / Haager Weg",
+      "housePointEstimate": "ca. 346 Hausnummerpunkte im Pflichtbereich",
+      "streets": [
+        "Buchholzstraße",
+        "Rieckweg",
+        "Auf dem Maar",
+        "Auf dem Gierolsrott",
+        "Gierolstraße",
+        "Havelstraße",
+        "Pregelstraße",
+        "Oderstraße",
+        "Saalestraße",
+        "Quellenweg",
+        "Elbestraße",
+        "Spreestraße",
+        "Peenestraße",
+        "Neißestraße",
+        "Netzestraße"
+      ],
+      "routeNote": "Route A vollständig schließen, dann Route B. Die Oderstraße ist der klare Übergabepunkt zwischen beiden Teilen.",
+      "fieldRule": "Nur geeignete Ein-, Zwei- und Reihenhäuser priorisieren. Mehrfamilienhäuser und Gewerbe auslassen.",
+      "mapRoutes": [
+        {
+          "label": "Route A",
+          "stops": [
+            "Buchholzstraße, Bonn",
+            "Rieckweg, Bonn",
+            "Auf dem Maar, Bonn",
+            "Auf dem Gierolsrott, Bonn",
+            "Gierolstraße, Bonn",
+            "Havelstraße, Bonn",
+            "Pregelstraße, Bonn",
+            "Oderstraße, Bonn"
+          ]
+        },
+        {
+          "label": "Route B",
+          "stops": [
+            "Saalestraße, Bonn",
+            "Quellenweg, Bonn",
+            "Elbestraße, Bonn",
+            "Spreestraße, Bonn",
+            "Peenestraße, Bonn",
+            "Neißestraße, Bonn",
+            "Netzestraße, Bonn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "dayNumber": 5,
+      "weekday": "Freitag",
+      "date": "2026-07-24",
+      "title": "Nachfassen und Südrunde",
+      "subtitle": "Warme Kontakte zuerst, Reserve nur bei Luft",
+      "goalText": "Der Freitag ist ein Abschlusstag: zuerst alle vereinbarten Rückkehrzeiten und heißen Kontakte; erst danach die kompakte Südrunde öffnen.",
+      "goals": [
+        {
+          "label": "Rückläufer",
+          "value": "25",
+          "caption": "Team-Ziel"
+        },
+        {
+          "label": "Tarifchecks",
+          "value": "15",
+          "caption": "Qualifizierte Checks"
+        },
+        {
+          "label": "Verträge",
+          "value": "3",
+          "caption": "Saubere Abschlüsse"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "12:00",
+          "label": "Sortieren",
+          "detail": "Heiß / warm / Termin; Rückkehrzeiten in eine klare Reihenfolge bringen."
+        },
+        {
+          "time": "12:30",
+          "label": "Rückläufer I",
+          "detail": "Nur bestätigte Zeiten und Kontakte mit konkretem Bedarf."
+        },
+        {
+          "time": "14:30",
+          "label": "Kurzstopp",
+          "detail": "15 Minuten: Unterlagen, Erreichbarkeit und Restliste prüfen."
+        },
+        {
+          "time": "14:45",
+          "label": "Rückläufer II",
+          "detail": "Offene Tarifchecks und bereits vorbereitete Angebote abschließen."
+        },
+        {
+          "time": "16:00",
+          "label": "Entscheidung",
+          "detail": "Kernrunde nur öffnen, wenn Rückkehrzeiten abgesichert sind."
+        },
+        {
+          "time": "16:15",
+          "label": "Südrunde",
+          "detail": "Höhenweg bis Waldmeisenweg; Reserve nur bei echter Luft."
+        },
+        {
+          "time": "20:00",
+          "label": "Wochenabschluss",
+          "detail": "Keine neuen Türen. Statistik, Learnings und nächste Gebietsentscheidung."
+        }
+      ],
+      "analysis": {
+        "chance": "Warme Kontakte haben die höchste Abschlusswahrscheinlichkeit der Woche; die Südrunde bleibt als kompakte Reserve.",
+        "risk": "Neue Türen können die vereinbarten Rückkehrzeiten verdrängen. Das darf am Abschlusstag nicht passieren.",
+        "tactic": "12:00 sortieren, 12:30–16:00 Rückläufer, ab 16:15 Kernrunde. Reserve nur bei weniger als 25 offenen Rückläufern."
+      },
+      "start": "Nachfassliste nach Uhrzeit sortiert",
+      "end": "Waldmeisenweg / Höhenweg",
+      "housePointEstimate": "ca. 155 Hausnummerpunkte in der Kernrunde, Reserve ca. 152",
+      "streets": [
+        "Nachfassliste Tag 1–4",
+        "Höhenweg 2–82",
+        "Starenweg",
+        "Turmfalkenweg",
+        "Blaukehlchenweg",
+        "Mauerseglerweg",
+        "Fasanenweg",
+        "Waldmeisenweg"
+      ],
+      "reserveStreets": [
+        "Haager Weg",
+        "Im Sonnenwinkel",
+        "Am Birkenbruch",
+        "Im Wurzelbusch",
+        "Im Erlenbusch"
+      ],
+      "routeNote": "Heiß vor warm vor neu. Die Südrunde erst starten, wenn alle vereinbarten Rückkehrzeiten abgesichert sind.",
+      "fieldRule": "Warme Kontakte haben Vorrang. Keine neue Straße beginnen, wenn ein vereinbarter Rückkehrtermin gefährdet wird.",
+      "mapRoutes": [
+        {
+          "label": "Kernrunde",
+          "stops": [
+            "Höhenweg, Bonn",
+            "Starenweg, Bonn",
+            "Turmfalkenweg, Bonn",
+            "Blaukehlchenweg, Bonn",
+            "Mauerseglerweg, Bonn",
+            "Fasanenweg, Bonn",
+            "Waldmeisenweg, Bonn"
+          ]
+        },
+        {
+          "label": "Reserve",
+          "stops": [
+            "Haager Weg, Bonn",
+            "Im Sonnenwinkel, Bonn",
+            "Am Birkenbruch, Bonn",
+            "Im Wurzelbusch, Bonn",
+            "Im Erlenbusch, Bonn"
+          ]
+        }
+      ]
+    }
+  ],
+  "dailyClosing": {
+    "metrics": [
+      "Türversuche",
+      "Gespräche",
+      "Tarifchecks",
+      "Angebote",
+      "Verträge",
+      "Rückläufer"
+    ],
+    "reflection": [
+      "Welcher Einstieg hat heute die meisten Gespräche geöffnet?",
+      "Welche Einwendung kam am häufigsten – und welche Antwort funktionierte?",
+      "Welche Straße war stark, welche schwach?",
+      "Welche drei Kontakte müssen morgen zuerst zurückgerufen oder besucht werden?",
+      "Eine konkrete Änderung für den nächsten Tag:"
+    ]
+  }
+}
