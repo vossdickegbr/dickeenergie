@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VD">
-  <rect width="64" height="64" rx="18" fill="#17352c"/>
-  <path d="M14 18h9l9 28 9-28h9L37 52H27L14 18Z" fill="#8bc53f"/>
-  <path d="M34 18h9.8C54 18 59 24.5 59 34.8 59 45.6 53.2 52 43.6 52H34l3-8h6.2c4.6 0 7-3 7-9.1 0-5.8-2.3-8.9-7-8.9H34v-8Z" fill="#fff" opacity=".96"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dicke Energieberatung">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2c55d"/>
+      <stop offset="1" stop-color="#9bc53d"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#070908"/>
+  <path d="M14 14h16c13 0 21 7 21 18S43 50 30 50H14V14Zm10 9v18h6c7 0 11-3 11-9s-4-9-11-9h-6Z" fill="url(#g)"/>
+  <path d="M46 16c4 1 7 4 8 8-4 1-8 0-11-3 0-2 1-4 3-5Zm-3 8c3 1 5 3 6 6-4 0-7-1-9-4 0-1 1-2 3-2Z" fill="#a9d43b"/>
 </svg>
