@@ -193,12 +193,11 @@
             <div class="bill-line accent"><span>Potenzial</span><b>finden</b></div>
             <div class="bill-shine"></div>
           </div>
-          <div class="smiley-stage" aria-hidden="true">
-            <div class="smiley-coin" data-smiley>
-              <span class="smiley-eye eye-left"></span><span class="smiley-eye eye-right"></span><span class="smiley-mouth"></span>
-            </div>
-          </div>
-          <p class="humor-line">Wenn unsere Kunden dabei nichts sparen würden, wären wir vermutlich ziemlich schnell arbeitslos.</p>
+          <aside class="humor-receipt" data-humor-receipt aria-label="Eine kleine Randnotiz">
+            <span class="humor-kicker">P.S.</span>
+            <p>Wenn unsere Kunden dabei nichts sparen würden, wären wir vermutlich ziemlich schnell <strong>arbeitslos.</strong></p>
+            <span class="humor-stroke" aria-hidden="true"></span>
+          </aside>
         </div>
       </div>
     </section>
@@ -223,9 +222,13 @@
       <div class="shell renewable-grid">
         <div class="renewable-copy reveal">
           <p class="chapter-label">03 · ENERGIE MITGEDACHT</p>
-          <h2>Nicht nur günstiger denken. <em>Weiterdenken.</em></h2>
-          <p>Bei passenden Stromtarifen schauen wir neben den Konditionen bewusst auf die Herkunft. Erneuerbare Energien aus Wind, Sonne und Wasser spielen dabei eine zentrale Rolle.</p>
-          <p class="renewable-note">Wo entsprechende Angebote verfügbar und für Sie sinnvoll sind, bevorzugen wir erneuerbare Energie mit deutscher Herkunft.</p>
+          <h2>Erneuerbare Energie. <em>Bevorzugt aus Deutschland.</em></h2>
+          <p class="renewable-lead">Wir schauen nicht nur darauf, was Energie kostet, sondern auch darauf, wo sie herkommt.</p>
+          <p>Bei passenden Angeboten setzen wir bevorzugt auf Strom aus <strong>Wind, Sonne und Wasser aus Deutschland</strong> – ohne Preis und Alltagstauglichkeit aus den Augen zu verlieren.</p>
+          <div class="germany-origin" aria-label="Bevorzugt erneuerbare Energien aus Deutschland">
+            <span class="germany-origin-mark" aria-hidden="true">DE</span>
+            <span><strong>Von hier, wenn es passt.</strong><small>Erneuerbar · nachvollziehbar · mit Blick auf gute Konditionen.</small></span>
+          </div>
         </div>
 
         <div class="renewable-world reveal delay-1" data-renewable-world>
@@ -265,6 +268,7 @@
               <rect class="solar-sheen" x="-120" y="0" width="90" height="120" fill="#e9dc8f" opacity=".26"/>
             </g>
           </svg>
+          <div class="renewable-origin-line" aria-hidden="true"><span>ERNEUERBAR</span><i></i><strong>BEVORZUGT AUS DEUTSCHLAND</strong></div>
           <div class="energy-tags" aria-hidden="true"><span>WIND</span><span>SONNE</span><span>WASSER</span></div>
         </div>
       </div>
@@ -323,49 +327,46 @@
       </div>
     </section>
 
-    <section class="chapter faq" id="fragen">
-      <div class="shell faq-grid">
-        <div class="faq-heading reveal">
-          <p class="chapter-label">NOCH EIN GEDANKE?</p>
-          <h2>Die Fragen, die man meistens erst kurz vor dem Anruf hat.</h2>
-        </div>
-        <div class="faq-list reveal delay-1">
-          <details>
-            <summary>Was kostet mich die Beratung?<span>+</span></summary>
-            <p>Keinen Cent direkt an uns. Kommt über uns ein Vertrag zustande, werden wir über unseren Vertrieb vergütet. Sie erhalten von uns keine Beratungsrechnung.</p>
-          </details>
-          <details>
-            <summary>Ich wechsle sowieso regelmäßig selbst. Was bringt mir das?<span>+</span></summary>
-            <p>Dann kennen Sie den Aufwand bereits. Sie können uns genau diesen Teil abgeben – und wir schauen gleichzeitig, ob sich bei Konditionen oder Tarifwahl noch etwas verbessern lässt.</p>
-          </details>
-          <details>
-            <summary>Ist das auch für Gewerbe gedacht?<span>+</span></summary>
-            <p>Ja. Die Beratung richtet sich an Haushalte und Unternehmen. Gerade im Geschäftsalltag soll Energie möglichst wenig Ihrer eigenen Zeit beanspruchen.</p>
-          </details>
-          <details>
-            <summary>Muss ich mich nach der Anfrage direkt entscheiden?<span>+</span></summary>
-            <p>Nein. Zuerst schauen wir uns die Situation an und erklären die Möglichkeiten. Eine Anfrage verpflichtet Sie nicht automatisch zu einem Vertragsabschluss.</p>
-          </details>
-          <details>
-            <summary>Was brauche ich für den ersten Kontakt?<span>+</span></summary>
-            <p>Am besten Ihre letzte Strom- oder Gasabrechnung. Wenn die gerade nicht zur Hand ist, können wir trotzdem erst einmal kurz sprechen.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" id="kontakt">
+<section class="final-cta" id="kontakt">
       <canvas class="final-current" data-final-current aria-hidden="true"></canvas>
-      <div class="shell final-shell">
+      <div class="shell final-shell final-shell-form">
         <div class="final-copy reveal">
           <p class="chapter-label light">JETZT IST ES EIGENTLICH EINFACH</p>
-          <h2>Sollen wir uns darum kümmern?</h2>
-          <p>Ein kurzer Kontakt reicht fürs Erste. Sie müssen nichts vorbereiten – wenn die letzte Rechnung in Reichweite ist, umso besser.</p>
-          <div class="final-actions">
-            <a class="btn btn-primary large magnet" href="tel:+491792675002">0179 2675002 anrufen <span>↗</span></a>
-            <button class="btn btn-ghost light-button" type="button" data-open-message>Nachricht vorbereiten <span>→</span></button>
-          </div>
-          <small class="contact-note">Testkontakt · aktuell keine öffentliche E-Mail hinterlegt</small>
+          <h2>Einmal antippen. Den Rest machen wir.</h2>
+          <p>Keine Formulare mit zwölf Pflichtfeldern. Sagen Sie uns nur kurz, worum es geht – WhatsApp öffnet sich mit einer fertigen Nachricht.</p>
+
+          <form class="whatsapp-builder" data-whatsapp-builder>
+            <fieldset class="choice-block" data-choice="energy">
+              <legend>Was sollen wir für Sie prüfen?</legend>
+              <div class="choice-row three">
+                <button type="button" class="choice-pill" data-value="strom" aria-pressed="false"><span>⚡</span> Strom</button>
+                <button type="button" class="choice-pill" data-value="gas" aria-pressed="false"><span>◌</span> Gas</button>
+                <button type="button" class="choice-pill" data-value="beides" aria-pressed="false"><span>↯</span> Beides</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="choice-block" data-choice="customer">
+              <legend>Für wen?</legend>
+              <div class="choice-row two">
+                <button type="button" class="choice-pill" data-value="privat" aria-pressed="false"><span>⌂</span> Privat</button>
+                <button type="button" class="choice-pill" data-value="unternehmen" aria-pressed="false"><span>▦</span> Unternehmen</button>
+              </div>
+            </fieldset>
+
+            <label class="name-field">Wie dürfen wir Sie nennen? <small>optional</small>
+              <input type="text" name="name" autocomplete="name" placeholder="Ihr Name" maxlength="80">
+            </label>
+
+            <div class="wa-preview" aria-live="polite">
+              <div class="wa-preview-top"><span class="wa-dot"></span><strong>Nachricht an Björn</strong><small>Vorschau</small></div>
+              <p data-wa-preview>Wählen Sie oben kurz Strom, Gas oder beides und ob es um Sie privat oder Ihr Unternehmen geht.</p>
+            </div>
+
+            <a class="btn btn-whatsapp large is-disabled" data-wa-link href="#" aria-disabled="true" rel="noopener">
+              Direkt über WhatsApp senden <span>↗</span>
+            </a>
+            <small class="wa-privacy">WhatsApp öffnet sich erst, wenn Sie auf den Button tippen. Bis dahin wird nichts versendet.</small>
+          </form>
         </div>
 
         <div class="final-seal reveal delay-1" aria-hidden="true">
@@ -376,34 +377,6 @@
       </div>
     </section>
   </main>
-
-  <div class="message-panel" data-message-panel aria-hidden="true">
-    <button class="message-backdrop" type="button" aria-label="Fenster schließen" data-close-message></button>
-    <section class="message-card" role="dialog" aria-modal="true" aria-labelledby="message-title">
-      <button class="message-close" type="button" aria-label="Schließen" data-close-message>×</button>
-      <p class="chapter-label">KURZ & UNKOMPLIZIERT</p>
-      <h2 id="message-title">Nachricht vorbereiten</h2>
-      <p>Nur das Nötigste. Den Rest klären wir persönlich.</p>
-      <form data-message-form>
-        <label>Ihr Name<input name="name" autocomplete="name" required placeholder="Max Mustermann"></label>
-        <label>Worum geht es?
-          <select name="topic">
-            <option>Strom</option><option>Gas</option><option>Strom & Gas</option><option>Noch unsicher</option>
-          </select>
-        </label>
-        <label>Was möchten Sie kurz loswerden? <span>optional</span><textarea name="note" rows="3" placeholder="z. B. Gewerbe, Umzug, aktueller Tarif läuft bald aus …"></textarea></label>
-        <button class="btn btn-primary full" type="submit">Nachricht erstellen <span>→</span></button>
-      </form>
-      <div class="message-result" data-message-result hidden>
-        <p data-message-preview></p>
-        <div class="message-actions">
-          <a class="btn btn-primary" data-sms-link href="sms:+491792675002">Per SMS öffnen <span>↗</span></a>
-          <button class="btn btn-dark" type="button" data-copy-message>Text kopieren</button>
-        </div>
-        <small data-copy-status aria-live="polite"></small>
-      </div>
-    </section>
-  </div>
 
   <footer class="site-footer">
     <div class="shell footer-grid">

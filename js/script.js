@@ -186,17 +186,20 @@
     });
   }
 
-  // Smiley appears exactly once at the psychologically timed savings moment
+  // One restrained humor moment: a side-note slides out from behind the bill once.
   const savingsVisual = $('[data-savings-visual]');
-  const smiley = $('[data-smiley]');
-  if (savingsVisual && smiley) {
-    const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && entry.intersectionRatio > .28) {
-        setTimeout(() => smiley.classList.add('is-peeking'), reduceMotion ? 0 : 650);
-        obs.disconnect();
-      }
-    }, { threshold: [.28] });
-    obs.observe(savingsVisual);
+  const humorReceipt = $('[data-humor-receipt]');
+  if (savingsVisual && humorReceipt) {
+    const revealHumor = () => humorReceipt.classList.add('is-revealed');
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting && entry.intersectionRatio > .34) {
+          setTimeout(revealHumor, reduceMotion ? 0 : 520);
+          obs.disconnect();
+        }
+      }, { threshold: [.34] });
+      obs.observe(savingsVisual);
+    } else revealHumor();
   }
 
   // Zero cost words – staggered only once
@@ -218,37 +221,71 @@
     });
   }
 
-  // Message preparation panel
-  const panel = $('[data-message-panel]');
-  const openers = $$('[data-open-message]');
-  const closers = $$('[data-close-message]');
-  const setPanel = open => {
-    if (!panel) return;
-    panel.classList.toggle('is-open', open); panel.setAttribute('aria-hidden', String(!open)); document.body.classList.toggle('panel-open', open);
-    if (open) setTimeout(()=>$('input',panel)?.focus(),120);
-  };
-  openers.forEach(b=>b.addEventListener('click',()=>setPanel(true)));
-  closers.forEach(b=>b.addEventListener('click',()=>setPanel(false)));
-  addEventListener('keydown',e=>{if(e.key==='Escape')setPanel(false)});
+  // WhatsApp conversion builder: two low-friction choices + optional name.
+  const waBuilder = $('[data-whatsapp-builder]');
+  if (waBuilder) {
+    const waPreview = $('[data-wa-preview]', waBuilder);
+    const waLink = $('[data-wa-link]', waBuilder);
+    const nameInput = $('input[name="name"]', waBuilder);
+    const selections = { energy: '', customer: '' };
 
-  const form = $('[data-message-form]');
-  const result = $('[data-message-result]');
-  const preview = $('[data-message-preview]');
-  const sms = $('[data-sms-link]');
-  const copy = $('[data-copy-message]');
-  const status = $('[data-copy-status]');
-  let messageText='';
-  form?.addEventListener('submit', e => {
-    e.preventDefault();
-    const fd=new FormData(form); const name=String(fd.get('name')||'').trim(); const topic=String(fd.get('topic')||'Energie'); const note=String(fd.get('note')||'').trim();
-    if(!name){$('input[name="name"]',form)?.focus();return;}
-    messageText=`Hallo Herr Dicke, ich bin ${name} und möchte meine ${topic==='Strom & Gas'?'Strom- und Gasverträge':topic==='Noch unsicher'?'Energiesituation':topic+'versorgung'} prüfen lassen.${note?'\n\nKurz dazu: '+note:''}\n\nViele Grüße`;
-    preview.textContent=messageText; result.hidden=false;
-    sms.href=`sms:+491792675002?body=${encodeURIComponent(messageText)}`;
-    result.scrollIntoView({behavior:reduceMotion?'auto':'smooth',block:'nearest'});
-  });
-  copy?.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(messageText); status.textContent='Text kopiert.'; }
-    catch { status.textContent='Kopieren war nicht möglich. Markieren Sie den Text oben manuell.'; }
-  });
+    const energyText = {
+      strom: 'Stromtarife',
+      gas: 'Gastarife',
+      beides: 'Strom- und Gastarife'
+    };
+
+    function buildWaMessage() {
+      const { energy, customer } = selections;
+      const name = String(nameInput?.value || '').trim();
+      if (!energy || !customer) {
+        waPreview.textContent = 'Wählen Sie oben kurz Strom, Gas oder beides und ob es um Sie privat oder Ihr Unternehmen geht.';
+        waLink.classList.add('is-disabled');
+        waLink.setAttribute('aria-disabled', 'true');
+        waLink.href = '#';
+        return;
+      }
+
+      const subject = energyText[energy];
+      const context = customer === 'unternehmen'
+        ? `die ${subject} für mein Unternehmen`
+        : `meine ${subject}`;
+      const signoff = name ? `\n\nLG\n${name}` : '\n\nLG';
+      const text = `Hey Björn, ich würde gerne ${context} bei euch checken lassen.${signoff}`;
+
+      waPreview.textContent = text;
+      waLink.href = `https://wa.me/491792675002?text=${encodeURIComponent(text)}`;
+      waLink.classList.remove('is-disabled');
+      waLink.setAttribute('aria-disabled', 'false');
+    }
+
+    $$('.choice-block', waBuilder).forEach(block => {
+      const key = block.dataset.choice;
+      $$('.choice-pill', block).forEach(button => {
+        button.addEventListener('click', () => {
+          $$('.choice-pill', block).forEach(other => {
+            const active = other === button;
+            other.classList.toggle('is-selected', active);
+            other.setAttribute('aria-pressed', String(active));
+          });
+          selections[key] = button.dataset.value || '';
+          buildWaMessage();
+        });
+      });
+    });
+
+    nameInput?.addEventListener('input', buildWaMessage);
+    waLink.addEventListener('click', e => {
+      if (waLink.getAttribute('aria-disabled') === 'true') {
+        e.preventDefault();
+        const firstMissing = !selections.energy
+          ? $('[data-choice="energy"]', waBuilder)
+          : $('[data-choice="customer"]', waBuilder);
+        firstMissing?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+        firstMissing?.classList.add('needs-choice');
+        setTimeout(() => firstMissing?.classList.remove('needs-choice'), 700);
+      }
+    });
+    buildWaMessage();
+  }
 })();
