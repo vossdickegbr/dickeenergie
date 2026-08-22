@@ -1,38 +1,58 @@
-# Voss & Dicke – Website-Übergabe
+# Dicke Energieberatung – Website-Übergabe
 
-Diese ZIP ist als direkter Ersatz für den bisherigen Inhalt des GitHub-Repositories aufgebaut.
+Diese ZIP bleibt als direkter Ersatz für den bisherigen Repository-Inhalt aufgebaut. Die übrigen App-/Dokumentationsordner wurden bewusst nicht entfernt.
 
 ## Veröffentlichung
 
-1. Inhalt des bisherigen Repositorys löschen oder durch den Inhalt dieser ZIP ersetzen.
+1. Den Inhalt dieser ZIP in das bestehende Repository übernehmen.
 2. Darauf achten, dass `index.html`, `CNAME`, `css`, `js` und `img` direkt im Veröffentlichungsordner liegen.
 3. In GitHub unter **Settings → Pages** prüfen, dass die richtige Branch-Quelle ausgewählt ist.
-4. Für die Domain `vossunddicke.de` bleibt die vorhandene `CNAME`-Datei bestehen.
-5. **Enforce HTTPS** in den GitHub-Pages-Einstellungen aktivieren.
+4. Die neue `CNAME`-Datei enthält `dickeenergie.de`.
+5. Beim Domainanbieter die DNS-Einträge auf den tatsächlich verwendeten Hostingweg setzen.
+6. **Enforce HTTPS** aktivieren, sobald GitHub Pages die neue Domain akzeptiert.
 
 ## Vor dem öffentlichen Start zwingend ergänzen
 
-In `impressum.html` und `datenschutz.html` fehlt noch die vollständige ladungsfähige Geschäftsanschrift. In beiden Dateien nach folgendem Text suchen:
+In `impressum.html` und `datenschutz.html` fehlen noch die endgültige ladungsfähige Geschäftsanschrift und die abschließende rechtliche Prüfung des tatsächlichen Unternehmens-/Hostingstatus.
 
-`[Straße, Hausnummer, PLZ und Ort ergänzen]`
+Nach diesen Platzhaltern suchen:
 
-Diesen Platzhalter vollständig ersetzen. Die gelben Hinweise können danach aus beiden Dateien entfernt werden.
+- `[Straße, Hausnummer]`
+- `[PLZ Ort]`
+- `[Straße, Hausnummer, PLZ und Ort ergänzen]`
 
-## Kontaktdaten zentral verwendet
+Die Hinweise in den Rechtsseiten erst entfernen, wenn die Angaben tatsächlich geprüft und vollständig sind.
 
-- Telefon / WhatsApp: `0151 44245033`
-- E-Mail: `vossdickegbr@gmail.com`
-- Instagram: `@vossunddicke_gbr`
-- Domain: `vossunddicke.de`
+## Öffentliche Kontaktdaten
 
-Bei Änderungen sollten die Angaben in `index.html`, `impressum.html`, `datenschutz.html` und im strukturierten JSON-LD im Kopf der `index.html` gemeinsam angepasst werden.
+- Öffentliche Telefonnummer / WhatsApp: noch nicht hinterlegt
+- Öffentliche E-Mail: noch nicht hinterlegt
+- Domain: `dickeenergie.de`
 
-## Technischer Aufbau
+Die technische Account-Adresse wird auf der Website bewusst nicht verwendet und bleibt ausschließlich in den jeweiligen Account-Einstellungen hinterlegt.
+
+## Technischer Aufbau der Website
 
 - Reines HTML, CSS und JavaScript
-- Keine Build-Schritte notwendig
+- Keine Build-Schritte für die statische Website notwendig
 - Keine externen Schriftarten
+- Keine externen 3D-Bibliotheken
+- Der 3D-Energieeffekt wird lokal per Canvas/JavaScript berechnet
+- 3D-Tilt- und Microinteractions ausschließlich als progressive Verbesserung
+- `prefers-reduced-motion` wird respektiert
 - Keine Analyse- oder Trackingdienste
 - Keine Cookies durch die Website selbst
 - Responsive Navigation und mobile Kontaktleiste
 - Interaktive Kontaktauswahl läuft ausschließlich lokal im Browser
+
+## Neue Website-Assets
+
+- `img/dicke-skyline.webp` – Bonn/Köln/Rhein-Hintergrund
+- `img/dicke-brand-landscape.webp` – vollständiges Markenmotiv
+- `img/dicke-founder-mark.webp` – persönliches Logo
+- `img/bjoern-dicke.webp` – freigestelltes Portrait
+- `img/og-image.jpg` – Social-/Open-Graph-Vorschau
+
+## Hinweis zur App
+
+Ordner wie `app/`, `components/`, `lib/`, `supabase/`, große Teile von `docs/` sowie die zugehörigen Next.js-Dateien gehören zur FieldOps-App und wurden bei diesem Website-Umbau nicht inhaltlich migriert. Sie bleiben unverändert im Paket.

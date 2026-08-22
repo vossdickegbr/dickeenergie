@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://vossunddicke.de/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://vossunddicke.de/impressum.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://vossunddicke.de/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://dickeenergie.de/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://dickeenergie.de/impressum.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://dickeenergie.de/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>

@@ -107,11 +107,11 @@ SUPABASE_SECRET_KEY=
 Für Mailversand und Push zusätzlich:
 
 ```env
-REPORT_RECIPIENT=vossdickegbr@gmail.com
+REPORT_RECIPIENT=
 RESEND_API_KEY=
 REPORT_FROM_EMAIL=Voss & Dicke App <app@eure-domain.de>
 CUSTOMER_PRIVACY_FROM_EMAIL=Voss & Dicke GbR <datenschutz@eure-domain.de>
-CUSTOMER_PRIVACY_REPLY_TO=vossdickegbr@gmail.com
+CUSTOMER_PRIVACY_REPLY_TO=
 CRON_SECRET=
 
 NEXT_PUBLIC_VAPID_PUBLIC_KEY=

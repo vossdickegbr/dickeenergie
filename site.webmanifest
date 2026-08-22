@@ -1,10 +1,10 @@
 {
-  "name": "Voss & Dicke GbR",
-  "short_name": "Voss & Dicke",
-  "description": "Persönliche Energieberatung für Strom und Gas aus Bonn.",
+  "name": "Dicke Energieberatung",
+  "short_name": "Dicke Energie",
+  "description": "Persönliche Energieberatung für Zuhause und Unternehmen.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f5ef",
-  "theme_color": "#17352c",
+  "background_color": "#080a09",
+  "theme_color": "#080a09",
   "icons": [{"src":"img/favicon.svg","sizes":"any","type":"image/svg+xml"}]
 }
