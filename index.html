@@ -3,13 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    document.documentElement.classList.add('js', 'intro-running');
-    window.setTimeout(() => document.documentElement.classList.remove('intro-running'), 3200);
-  </script>
-  <title>Dicke Energieberatung | Energie einfach abgeben</title>
-  <meta name="description" content="Dicke Energieberatung kümmert sich um Strom- und Gasverträge für Zuhause und Unternehmen: persönlich, verständlich, mit Blick auf bessere Konditionen und erneuerbare Energie. Für unsere Beratung zahlen Sie keinen Cent.">
-  <meta name="theme-color" content="#080a09">
+  <title>Dicke Energieberatung | Energie einfach erledigt</title>
+  <meta name="description" content="Dicke Energieberatung kümmert sich um Strom- und Gasverträge für Zuhause und Unternehmen – persönlich, verständlich, mit Blick auf Kosten, erneuerbare Energie und möglichst wenig Aufwand für Sie.">
+  <meta name="theme-color" content="#090b0a">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://vossunddicke.de/">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -21,12 +17,10 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Dicke Energieberatung">
-  <meta property="og:title" content="Sie haben Wichtigeres zu tun als Energieverträge.">
-  <meta property="og:description" content="Wir kümmern uns um Vergleich, Wechsel und Betreuung – für Zuhause und Unternehmen. Für unsere Beratung zahlen Sie keinen Cent.">
+  <meta property="og:title" content="Energie läuft jeden Tag. Sie müssen ihr nicht hinterherlaufen.">
+  <meta property="og:description" content="Wir kümmern uns um Tarife, Wechsel und Betreuung – für Zuhause und Unternehmen. Persönlich aus dem Rheinland.">
   <meta property="og:url" content="https://vossunddicke.de/">
   <meta property="og:image" content="https://vossunddicke.de/img/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <script type="application/ld+json">
   {
@@ -34,10 +28,8 @@
     "@type": "ProfessionalService",
     "name": "Dicke Energieberatung",
     "url": "https://vossunddicke.de/",
-    "logo": "https://vossunddicke.de/img/favicon.svg",
-    "image": "https://vossunddicke.de/img/og-image.jpg",
-    "description": "Persönliche Beratung und Vermittlung von Strom- und Gaslieferverträgen für Privathaushalte und Unternehmen.",
     "telephone": "+49 179 2675002",
+    "description": "Persönliche Beratung und Vermittlung von Strom- und Gaslieferverträgen für Privathaushalte und Unternehmen.",
     "address": {"@type":"PostalAddress","addressLocality":"Bonn","addressCountry":"DE"},
     "areaServed": ["Bonn", "Köln", "Rheinland", "Deutschland"]
   }
@@ -45,406 +37,384 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Direkt zum Inhalt</a>
-  <div class="page-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-
-  <div class="welcome-intro" data-welcome-intro role="status" aria-label="Herzlich willkommen bei Dicke Energieberatung">
-    <div class="welcome-intro-aura" aria-hidden="true"></div>
-    <div class="welcome-intro-skyline" aria-hidden="true"></div>
-    <div class="welcome-intro-content">
-      <span class="intro-monogram">D</span>
-      <p class="welcome-intro-title">DICKE</p>
-      <p class="welcome-intro-subtitle">ENERGIEBERATUNG</p>
-      <span class="welcome-intro-progress" aria-hidden="true"><i></i></span>
-    </div>
-  </div>
+  <div class="progress-rail" aria-hidden="true"><i data-page-progress></i></div>
 
   <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Dicke Energieberatung – zur Startseite">
-        <span class="brand-mark" aria-hidden="true">D</span>
-        <span class="brand-copy"><strong>DICKE</strong><small>ENERGIEBERATUNG</small></span>
+    <div class="shell nav-shell">
+      <a class="wordmark" href="#top" aria-label="Dicke Energieberatung – Startseite">
+        <span class="wordmark-d">D</span>
+        <span class="wordmark-copy"><strong>DICKE</strong><small>ENERGIEBERATUNG</small></span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
+      <button class="menu-button" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span></span><span></span>
       </button>
 
-      <nav class="site-nav" id="main-navigation" aria-label="Hauptnavigation">
-        <a href="#warum">Warum wir</a>
-        <a href="#entlastung">Was wir übernehmen</a>
+      <nav class="main-nav" id="site-nav" data-nav>
+        <a href="#uebernehmen">Was wir übernehmen</a>
+        <a href="#energie">Energie & Herkunft</a>
         <a href="#ablauf">So läuft es</a>
-        <a href="#ueber-mich">Über mich</a>
-        <a href="#fragen">Fragen</a>
-        <a class="nav-cta" href="#kontakt">Energie abgeben</a>
+        <a href="#persoenlich">Persönlich</a>
+        <a class="nav-action" href="#kontakt">Energie abgeben <span>↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-skyline" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+    <section class="hero" id="top" data-hero>
+      <div class="hero-sky" aria-hidden="true"></div>
+      <div class="hero-city-wrap" aria-hidden="true" data-city-parallax>
+        <img src="img/dicke-skyline.webp" alt="" class="hero-city">
+        <div class="city-reflection"></div>
+      </div>
+      <canvas class="rhine-canvas" data-rhine-canvas aria-hidden="true"></canvas>
+      <div class="hero-noise" aria-hidden="true"></div>
 
-      <div class="container hero-grid">
-        <div class="hero-copy reveal is-visible">
-          <p class="eyebrow"><span></span> Persönlich aus dem Rheinland · Zuhause &amp; Unternehmen</p>
-          <h1>Sie haben Wichtigeres zu tun als <em>Energieverträge.</em></h1>
-          <p class="hero-lead">Wir kümmern uns um Vergleich, Wechsel und Betreuung Ihrer Strom- und Gasverträge – verständlich, persönlich und mit Blick darauf, was für Sie wirklich besser ist.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary magnetic" href="#kontakt"><span>Energie abgeben</span><i aria-hidden="true">↗</i></a>
-            <a class="button button-quiet" href="#ablauf">
-              <span>So funktioniert's</span><i aria-hidden="true">↓</i>
-            </a>
-          </div>
-
-          <div class="hero-proof" aria-label="Die wichtigsten Vorteile">
-            <span><b>0 €</b> Beratungskosten</span>
-            <span><b>1</b> Ansprechpartner</span>
-            <span><b>2</b> Welten: Zuhause &amp; Business</span>
-          </div>
+      <div class="shell hero-content">
+        <div class="hero-kicker reveal-now">
+          <span class="live-dot"></span>
+          Persönlich aus dem Rheinland · für Zuhause & Unternehmen
         </div>
 
-        <div class="hero-experience reveal is-visible delay-1" data-tilt data-tilt-strength="5">
-          <div class="energy-orb-shell" aria-hidden="true">
-            <canvas class="energy-orb" data-energy-orb width="760" height="760"></canvas>
-            <div class="energy-orb-core"></div>
-          </div>
-          <div class="hero-float-card hero-float-card-top">
-            <span class="status-dot" aria-hidden="true"></span>
-            <p><small>Ihr Thema</small><strong>bei uns aufgehoben</strong></p>
-          </div>
-          <div class="hero-float-card hero-float-card-bottom">
-            <p><small>Wir denken an</small><strong>Preis · Fristen · Wechsel</strong></p>
-          </div>
-          <span class="hero-orbit-label orbit-label-one">SONNE</span>
-          <span class="hero-orbit-label orbit-label-two">WIND</span>
-          <span class="hero-orbit-label orbit-label-three">WASSER</span>
+        <h1 class="hero-title reveal-now">
+          <span>Energie läuft jeden Tag.</span>
+          <em>Sie müssen ihr nicht hinterherlaufen.</em>
+        </h1>
+
+        <p class="hero-lead reveal-now">Wir kümmern uns um Tarife, Wechsel und Betreuung – verständlich, persönlich und so, dass Energie auf Ihrer To-do-Liste möglichst weit nach unten rutscht.</p>
+
+        <div class="hero-actions reveal-now">
+          <a class="btn btn-primary magnet" href="#kontakt">Energie abgeben <span>↗</span></a>
+          <a class="btn btn-ghost" href="#uebernehmen">In 60 Sekunden verstehen <span>↓</span></a>
+        </div>
+
+        <div class="hero-facts reveal-now" aria-label="Kurz erklärt">
+          <span><b>Strom & Gas</b><small>aus einer Hand</small></span>
+          <span><b>Privat &amp; Gewerbe</b><small>eine Beratung, zwei Alltage</small></span>
+          <span><b>1 Kontakt</b><small>statt Tarif-Dschungel</small></span>
         </div>
       </div>
 
-      <div class="container hero-bottomline">
-        <p>Keine Tarifshow. Kein Fachchinesisch. <strong>Einfach jemand, der sich kümmert.</strong></p>
-        <a href="#warum" class="scroll-cue" aria-label="Weiter scrollen"><span></span>Scroll</a>
+      <div class="hero-caption shell" aria-hidden="true">
+        <span>BONN</span><i></i><small>DER RHEIN VERBINDET</small><i></i><span>KÖLN</span>
+      </div>
+
+      <a class="hero-scroll" href="#uebernehmen" aria-label="Weiter scrollen"><span></span><small>Weiter</small></a>
+    </section>
+
+    <section class="chapter warm" id="uebernehmen">
+      <div class="shell">
+        <div class="chapter-intro reveal">
+          <p class="chapter-label">01 · ENTLastung</p>
+          <h2>Was wäre, wenn Energie einfach <em>erledigt</em> wäre?</h2>
+          <p>Ein Haushalt hat genug Alltag. Ein Unternehmen genug Geschäft. In beiden Fällen ist Ihre Zeit zu schade für Vergleichsportale, Fristen und Tarifkleingedrucktes.</p>
+        </div>
+
+        <div class="handover-stage" data-handover>
+          <div class="handover-side handover-you reveal">
+            <p class="stage-caption">Heute noch bei Ihnen</p>
+            <div class="floating-task task-a"><span>01</span> Rechnung raussuchen</div>
+            <div class="floating-task task-b"><span>02</span> Tarife vergleichen</div>
+            <div class="floating-task task-c"><span>03</span> Vertragsdetails prüfen</div>
+            <div class="floating-task task-d"><span>04</span> Fristen erinnern</div>
+            <div class="floating-task task-e"><span>05</span> Wechsel organisieren</div>
+          </div>
+
+          <div class="handover-flow" aria-hidden="true">
+            <svg viewBox="0 0 220 520" preserveAspectRatio="none">
+              <path class="flow-track" d="M22 20 C196 94 18 174 188 250 C40 330 194 403 104 500"></path>
+              <path class="flow-live" data-flow-path d="M22 20 C196 94 18 174 188 250 C40 330 194 403 104 500"></path>
+            </svg>
+          </div>
+
+          <div class="handover-side handover-us reveal delay-1">
+            <p class="stage-caption">Danach bei uns</p>
+            <div class="service-core" data-tilt>
+              <div class="core-ring"></div>
+              <span class="core-d">D</span>
+              <strong>Wir behalten den Überblick.</strong>
+              <p>Preis · Wechsel · Fristen · Betreuung</p>
+            </div>
+            <p class="handover-bottom">Sie kümmern sich um Ihr Leben oder Ihr Unternehmen. <strong>Wir kümmern uns um die Energie.</strong></p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section empathy-section" id="warum">
-      <div class="container empathy-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><span></span> Kommt Ihnen bekannt vor?</p>
-          <h2>Energie läuft nebenbei. Bis sie plötzlich <em>Zeit kostet.</em></h2>
+    <section class="chapter split-life">
+      <div class="life-track" aria-hidden="true"><i></i></div>
+      <div class="shell life-shell">
+        <div class="life-copy reveal">
+          <p class="chapter-label">EIN THEMA · ZWEI ALLTAGE</p>
+          <h2>Die Rechnung sieht anders aus. Das Problem fühlt sich gleich an.</h2>
+          <p>Ob auf dem Küchentisch, im Büro oder zwischen zwei Kundenterminen: Energie darf wichtig sein, ohne ständig Ihre Aufmerksamkeit zu verlangen.</p>
         </div>
 
-        <div class="empathy-stack" data-empathy-stack>
-          <article class="empathy-card reveal" data-tilt>
-            <span class="card-index">01</span>
-            <p class="card-kicker">Zuhause</p>
-            <h3>„Eigentlich wollte ich meinen Tarif längst mal anschauen.“</h3>
-            <p>Dann kommt der Alltag dazwischen. Und der Vertrag läuft einfach weiter.</p>
+        <div class="life-scenes">
+          <article class="life-scene home-scene reveal" data-scene>
+            <div class="scene-art home-art" aria-hidden="true">
+              <div class="house">
+                <span class="roof"></span><span class="wall"></span><span class="window w1"></span><span class="window w2"></span><span class="door"></span>
+              </div>
+              <div class="scene-current"></div>
+            </div>
+            <p><strong>Zuhause</strong><span>Der Vertrag läuft. Wir schauen, ob er noch zu Ihnen passt.</span></p>
           </article>
-          <article class="empathy-card reveal delay-1" data-tilt>
-            <span class="card-index">02</span>
-            <p class="card-kicker">Im Unternehmen</p>
-            <h3>Zwischen Kunden, Mitarbeitern und Rechnungen ist Energie selten Priorität Nummer eins.</h3>
-            <p>Soll sie auch nicht sein. Ihr Geschäft hat Wichtigeres verdient.</p>
-          </article>
-          <article class="empathy-card reveal delay-2" data-tilt>
-            <span class="card-index">03</span>
-            <p class="card-kicker">Auch wenn Sie sich kümmern</p>
-            <h3>Wer jedes Jahr selbst vergleicht, spart vielleicht Geld – aber nicht unbedingt Zeit.</h3>
-            <p>Genau diese Arbeit können Sie abgeben.</p>
+
+          <article class="life-scene business-scene reveal delay-1" data-scene>
+            <div class="scene-art business-art" aria-hidden="true">
+              <div class="shop"><span class="awning"></span><span class="window"></span><span class="door"></span><span class="sign">OPEN</span></div>
+              <div class="scene-current"></div>
+            </div>
+            <p><strong>Im Geschäft</strong><span>Sie führen Ihr Business. Energieverträge müssen nicht mitführen.</span></p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section takeover-section" id="entlastung">
-      <div class="takeover-ambient" aria-hidden="true"></div>
-      <div class="container takeover-grid">
-        <div class="takeover-copy reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Sie geben ab. Wir übernehmen.</p>
-          <h2>Sie machen Ihr Ding.<br><em>Wir kümmern uns um die Energie.</em></h2>
-          <p>Ob Haushalt, Laden, Praxis, Büro oder Werkstatt: Sie müssen keine Tarife studieren, Kündigungsfristen sammeln oder jedes Jahr wieder von vorne anfangen.</p>
-          <a class="text-link text-link-light" href="#ablauf">So einfach läuft es <span aria-hidden="true">→</span></a>
+    <section class="chapter savings" id="sparen">
+      <div class="shell savings-shell">
+        <div class="savings-copy reveal">
+          <p class="chapter-label light">02 · DER NUTZEN</p>
+          <h2>Natürlich geht es auch ums <em>Geld.</em></h2>
+          <p>Wir vergleichen passende Möglichkeiten und schauen, wo sich Ihre Energiekosten sinnvoll verbessern lassen. Nicht mit Fantasiezahlen, sondern anhand Ihrer echten Situation.</p>
+          <div class="savings-points">
+            <span>Aktuelle Konditionen ansehen</span>
+            <span>Passende Angebote vergleichen</span>
+            <span>Wechselaufwand übernehmen</span>
+          </div>
         </div>
 
-        <div class="task-transfer reveal delay-1" aria-label="Was wir Ihnen abnehmen">
-          <div class="task-column task-column-you">
-            <span class="task-column-label">Nicht mehr Ihre To-do-Liste</span>
-            <div class="task-chip" style="--i:0"><span>⌕</span> Tarife vergleichen</div>
-            <div class="task-chip" style="--i:1"><span>⌁</span> Vertragsdetails prüfen</div>
-            <div class="task-chip" style="--i:2"><span>↻</span> Wechsel organisieren</div>
-            <div class="task-chip" style="--i:3"><span>◷</span> Fristen im Blick behalten</div>
+        <div class="savings-visual reveal delay-1" data-savings-visual>
+          <div class="bill-3d" data-tilt>
+            <div class="bill-top"><span>Energie</span><small>nicht einfach laufen lassen</small></div>
+            <div class="bill-line"><span>Verbrauch</span><b>im Blick</b></div>
+            <div class="bill-line"><span>Konditionen</span><b>geprüft</b></div>
+            <div class="bill-line accent"><span>Potenzial</span><b>finden</b></div>
+            <div class="bill-shine"></div>
           </div>
-          <div class="transfer-arrow" aria-hidden="true"><span>→</span></div>
-          <div class="task-column task-column-us">
-            <span class="task-column-label">Unsere Arbeit</span>
-            <div class="task-hub">
-              <span class="task-hub-mark">D</span>
-              <strong>Dicke Energieberatung</strong>
-              <small>Wir behalten den Überblick.</small>
+          <div class="smiley-stage" aria-hidden="true">
+            <div class="smiley-coin" data-smiley>
+              <span class="smiley-eye eye-left"></span><span class="smiley-eye eye-right"></span><span class="smiley-mouth"></span>
             </div>
           </div>
+          <p class="humor-line">Wenn unsere Kunden dabei nichts sparen würden, wären wir vermutlich ziemlich schnell arbeitslos.</p>
         </div>
       </div>
     </section>
 
-    <section class="section savings-section">
-      <div class="container savings-grid">
-        <div class="savings-visual reveal" data-savings-scene>
-          <div class="savings-ring">
-            <span class="savings-ring-label">ZIEL</span>
-            <strong>€</strong>
-            <small>bessere Konditionen<br>für Ihre Situation</small>
-          </div>
-          <div class="savings-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <section class="zero-cost" id="kosten" data-zero-cost>
+      <div class="zero-aura" aria-hidden="true"></div>
+      <div class="shell zero-shell">
+        <p class="zero-question reveal">Und was kostet Sie unsere Arbeit?</p>
+        <div class="zero-words" aria-label="Keinen einzigen Cent">
+          <span class="zero-word" data-zero-word>Keinen.</span>
+          <span class="zero-word" data-zero-word>Einzigen.</span>
+          <span class="zero-word gold" data-zero-word>Cent.</span>
         </div>
-
-        <div class="savings-copy reveal delay-1">
-          <p class="eyebrow"><span></span> Natürlich schauen wir aufs Geld</p>
-          <h2>Unsere Arbeit soll sich für Sie <em>rechnen.</em></h2>
-          <p class="lead">Wir vergleichen passende Möglichkeiten und schauen, wo sich Ihre Energiekosten sinnvoll verbessern lassen – ohne Ihnen irgendeine Fantasie-Ersparnis zu versprechen.</p>
-
-          <div class="humor-moment" data-humor-moment>
-            <p>Wenn unsere Kunden dabei nichts sparen würden, wären wir vermutlich ziemlich schnell arbeitslos.</p>
-            <div class="smiley-3d" aria-hidden="true">
-              <span class="smiley-eye eye-left"></span>
-              <span class="smiley-eye eye-right"></span>
-              <span class="smiley-mouth"></span>
-              <span class="smiley-shine"></span>
-            </div>
-          </div>
-
-          <p class="fine-print">Wie viel möglich ist, hängt immer von Ihrem aktuellen Vertrag, Verbrauch, Standort und der jeweiligen Marktsituation ab. Wir vergleichen auf nachvollziehbarer Grundlage.</p>
+        <div class="zero-explain reveal">
+          <p>Für unsere Beratung und Betreuung zahlen Sie uns nichts. Kommt über uns ein Energievertrag zustande, werden wir über unseren Vertrieb vergütet. <strong>Sie bekommen von uns keine Rechnung.</strong></p>
+          <span>Sie geben uns die Arbeit. Nicht Ihr Geld.</span>
         </div>
       </div>
     </section>
 
-    <section class="section zero-section" aria-labelledby="zero-title">
-      <div class="zero-grid" aria-hidden="true"></div>
-      <div class="container zero-inner reveal">
-        <p class="eyebrow eyebrow-light"><span></span> Die naheliegende Frage</p>
-        <h2 id="zero-title">Und was kostet Sie unsere Arbeit?</h2>
-        <p class="zero-answer"><span>Keinen.</span> <span>Einzigen.</span> <span>Cent.</span></p>
-        <div class="zero-explainer">
-          <p>Für unsere Beratung und Betreuung zahlen Sie uns nichts. Kommt über uns ein Energievertrag zustande, erhalten wir dafür eine Vergütung über den jeweiligen Vertrieb.</p>
-          <p><strong>Sie geben uns die Arbeit. Nicht Ihr Geld.</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section renewable-section">
-      <div class="container renewable-grid">
+    <section class="chapter renewables" id="energie">
+      <div class="shell renewable-grid">
         <div class="renewable-copy reveal">
-          <p class="eyebrow"><span></span> Mehr als nur der Preis</p>
-          <h2>Wenn wir neu aufstellen, schauen wir auch darauf, <em>woher Energie kommt.</em></h2>
-          <p class="lead">Bei passenden Stromtarifen achten wir neben guten Konditionen bewusst auf erneuerbare Energie. Wo entsprechende Angebote verfügbar und sinnvoll sind, bevorzugen wir Lösungen mit Herkunft aus Deutschland.</p>
-          <p>So verbinden wir zwei Dinge, die für uns zusammengehören: Ihre Energiekosten im Blick behalten und die Energiewende dort unterstützen, wo es tatsächlich zum Angebot passt.</p>
+          <p class="chapter-label">03 · ENERGIE MITGEDACHT</p>
+          <h2>Nicht nur günstiger denken. <em>Weiterdenken.</em></h2>
+          <p>Bei passenden Stromtarifen schauen wir neben den Konditionen bewusst auf die Herkunft. Erneuerbare Energien aus Wind, Sonne und Wasser spielen dabei eine zentrale Rolle.</p>
+          <p class="renewable-note">Wo entsprechende Angebote verfügbar und für Sie sinnvoll sind, bevorzugen wir erneuerbare Energie mit deutscher Herkunft.</p>
         </div>
 
-        <div class="renewable-scene reveal delay-1" data-tilt data-tilt-strength="3">
-          <div class="renewable-card renewable-wind">
-            <span class="renewable-icon" aria-hidden="true">✦</span>
-            <div><strong>Wind</strong><small>erneuerbar gedacht</small></div>
-          </div>
-          <div class="renewable-card renewable-solar">
-            <span class="renewable-icon" aria-hidden="true">☼</span>
-            <div><strong>Sonne</strong><small>klar im Fokus</small></div>
-          </div>
-          <div class="renewable-card renewable-water">
-            <span class="renewable-icon" aria-hidden="true">≈</span>
-            <div><strong>Wasser</strong><small>Teil des Mixes</small></div>
-          </div>
-          <div class="renewable-center">
-            <span>D</span>
-            <strong>Preis + Herkunft</strong>
-            <small>gemeinsam betrachten</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section process-section" id="ablauf">
-      <div class="container process-grid">
-        <div class="process-copy reveal">
-          <p class="eyebrow"><span></span> So läuft es</p>
-          <h2>Sie schicken uns den Anfang. <em>Wir machen den Rest.</em></h2>
-          <p>Kein Vorwissen. Keine stundenlange Vorbereitung. Eine aktuelle Rechnung oder ein paar Vertragsdaten reichen für den Start.</p>
-          <a class="button button-dark magnetic" href="#kontakt"><span>Einfach anfangen</span><i aria-hidden="true">↗</i></a>
-        </div>
-
-        <ol class="process-steps" data-process-steps>
-          <li class="reveal">
-            <span class="process-number">01</span>
-            <div><p class="mini-label">Kontakt</p><h3>Sie melden sich kurz.</h3><p>Ein „Hallo, ich möchte meine Energie prüfen lassen“ reicht. Den Rest fragen wir gemeinsam ab.</p></div>
-          </li>
-          <li class="reveal delay-1">
-            <span class="process-number">02</span>
-            <div><p class="mini-label">Prüfung</p><h3>Wir schauen uns Ihre Situation an.</h3><p>Preis, Verbrauch, Laufzeit, Konditionen und passende Alternativen – verständlich statt überladen.</p></div>
-          </li>
-          <li class="reveal delay-2">
-            <span class="process-number">03</span>
-            <div><p class="mini-label">Entscheidung</p><h3>Sie wissen, woran Sie sind.</h3><p>Wir erklären die passende Möglichkeit so, dass Sie wissen, was sich ändert und warum.</p></div>
-          </li>
-          <li class="reveal delay-3">
-            <span class="process-number">04</span>
-            <div><p class="mini-label">Danach</p><h3>Das Thema bleibt nicht wieder bei Ihnen liegen.</h3><p>Wir bleiben Ansprechpartner und behalten im Blick, wann sich ein erneuter Blick auf den Vertrag lohnt.</p></div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section founder-section" id="ueber-mich">
-      <div class="founder-backdrop" aria-hidden="true"></div>
-      <div class="container founder-grid">
-        <div class="founder-visual reveal">
-          <div class="founder-photo-shell" data-tilt data-tilt-strength="4">
-            <div class="founder-halo" aria-hidden="true"></div>
-            <img class="founder-photo" src="img/bjoern-dicke.webp" width="920" height="1380" alt="Björn Dicke, persönlicher Ansprechpartner bei Dicke Energieberatung" loading="lazy">
-            <div class="founder-location"><span aria-hidden="true">⌖</span><p><strong>Bonn &amp; Köln</strong><small>persönlich verwurzelt</small></p></div>
-          </div>
-          <img class="founder-mark" src="img/dicke-founder-mark.webp" width="980" height="980" alt="Dicke Energieberatung Logo mit Björn Dicke" loading="lazy">
-        </div>
-
-        <div class="founder-copy reveal delay-1">
-          <p class="eyebrow eyebrow-light"><span></span> Wer kümmert sich eigentlich?</p>
-          <h2>Hi, ich bin <em>Björn.</em></h2>
-          <p class="lead">Ich möchte, dass Energieberatung sich nicht wie ein Verkaufsgespräch anfühlt, sondern wie das gute Gefühl, ein Thema endlich bei jemandem abgeben zu können.</p>
-          <p>Mir ist wichtig, dass Sie verstehen, was wir machen, warum eine Möglichkeit zu Ihnen passt und dass Sie auch nach einem Wechsel wissen, wen Sie anrufen können. Ganz egal, ob es um Ihre Wohnung, Ihr Haus oder Ihr Unternehmen geht.</p>
-          <p>Ich komme aus dem Rheinland, arbeite nah am Menschen und möchte mir Vertrauen nicht mit großen Worten verdienen, sondern damit, dass die Zusammenarbeit einfach funktioniert.</p>
-          <div class="founder-signature"><strong>Björn Dicke</strong><span>Dicke Energieberatung</span></div>
+        <div class="renewable-world reveal delay-1" data-renewable-world>
+          <div class="sun-orb" aria-hidden="true"></div>
+          <svg class="energy-landscape" viewBox="0 0 900 560" role="img" aria-label="Animierte Darstellung von Windkraft, Solarenergie und Wasserkraft">
+            <defs>
+              <linearGradient id="hill" x1="0" x2="1"><stop offset="0" stop-color="#1d241e"/><stop offset="1" stop-color="#35402c"/></linearGradient>
+              <linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#7a9650"/><stop offset=".5" stop-color="#d4bd67"/><stop offset="1" stop-color="#98ba44"/></linearGradient>
+              <linearGradient id="panel" x1="0" x2="1"><stop offset="0" stop-color="#172319"/><stop offset="1" stop-color="#314630"/></linearGradient>
+            </defs>
+            <path d="M0 398 C170 320 274 382 417 332 C574 277 684 329 900 254 L900 560 L0 560 Z" fill="url(#hill)"/>
+            <path class="water-river" d="M-30 485 C191 420 288 554 471 460 C633 376 722 506 946 421" fill="none" stroke="url(#water)" stroke-width="70" stroke-linecap="round" opacity=".8"/>
+            <path class="water-highlight" d="M-30 477 C191 412 288 546 471 452 C633 368 722 498 946 413" fill="none" stroke="#f1d77c" stroke-width="2" stroke-linecap="round"/>
+            <g class="turbine t1" transform="translate(610 254)">
+              <rect x="-6" y="0" width="12" height="210" rx="5" fill="#e9e1c8"/>
+              <circle cx="0" cy="0" r="15" fill="#f5ecd4"/>
+              <g class="blades">
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1"/>
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1" transform="rotate(120)"/>
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1" transform="rotate(240)"/>
+              </g>
+            </g>
+            <g class="turbine t2" transform="translate(754 300) scale(.72)">
+              <rect x="-6" y="0" width="12" height="210" rx="5" fill="#e9e1c8"/>
+              <circle cx="0" cy="0" r="15" fill="#f5ecd4"/>
+              <g class="blades slow">
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1"/>
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1" transform="rotate(120)"/>
+                <path d="M0 0 C14 -16 14 -92 2 -136 C-7 -109 -7 -40 0 0" fill="#f3ead1" transform="rotate(240)"/>
+              </g>
+            </g>
+            <g class="solar" transform="translate(145 334) skewX(-18)">
+              <rect x="0" y="0" width="225" height="120" rx="5" fill="url(#panel)" stroke="#9fbd4a" stroke-width="3"/>
+              <g stroke="#88a64b" stroke-width="2" opacity=".65">
+                <path d="M45 0V120M90 0V120M135 0V120M180 0V120"/><path d="M0 40H225M0 80H225"/>
+              </g>
+              <rect class="solar-sheen" x="-120" y="0" width="90" height="120" fill="#e9dc8f" opacity=".26"/>
+            </g>
+          </svg>
+          <div class="energy-tags" aria-hidden="true"><span>WIND</span><span>SONNE</span><span>WASSER</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section region-section">
-      <div class="region-skyline" aria-hidden="true"></div>
-      <div class="container region-content reveal">
-        <p class="eyebrow eyebrow-light"><span></span> Zwischen Bonn und Köln zuhause</p>
-        <h2>Regional im Gefühl.<br><em>Digital genauso nah.</em></h2>
-        <p>Persönliche Gespräche im Rheinland, telefonische Beratung oder digital – so, wie es in Ihren Alltag und zu Ihrem Unternehmen passt.</p>
+    <section class="chapter process" id="ablauf">
+      <div class="shell">
+        <div class="chapter-intro narrow reveal">
+          <p class="chapter-label">04 · SO EINFACH</p>
+          <h2>Eine Rechnung reicht fürs Erste.</h2>
+          <p>Sie müssen keinen Tarif kennen, keine Vergleichsliste vorbereiten und kein Energiewissen mitbringen.</p>
+        </div>
+
+        <div class="process-road" data-process-road>
+          <svg class="road-line" viewBox="0 0 1300 300" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M38 158 C210 20 367 282 542 151 C706 26 857 280 1042 143 C1134 74 1216 107 1262 62"></path>
+          </svg>
+          <article class="process-step s1 reveal"><span>01</span><strong>Kurz zeigen</strong><p>Letzte Abrechnung oder die wichtigsten Vertragsdaten genügen für den Start.</p></article>
+          <article class="process-step s2 reveal delay-1"><span>02</span><strong>Wir prüfen</strong><p>Wir vergleichen passende Möglichkeiten und erklären, was wirklich relevant ist.</p></article>
+          <article class="process-step s3 reveal delay-2"><span>03</span><strong>Sie entscheiden</strong><p>Sie wissen, was sich ändert, bevor Sie sich für etwas entscheiden.</p></article>
+          <article class="process-step s4 reveal delay-3"><span>04</span><strong>Wir bleiben dran</strong><p>Auch nach dem Wechsel haben Sie einen persönlichen Ansprechpartner.</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="section faq-section" id="fragen">
-      <div class="container faq-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><span></span> Kurz geklärt</p>
-          <h2>Die Fragen, die man sich <em>wirklich stellt.</em></h2>
-          <p>Und wenn Ihre nicht dabei ist: Schreiben oder rufen Sie einfach an. Sie müssen sich für eine Frage nicht erst durch ein Formular kämpfen.</p>
+    <section class="personal" id="persoenlich">
+      <div class="shell personal-grid">
+        <div class="personal-photo-wrap reveal">
+          <div class="personal-halo" aria-hidden="true"></div>
+          <img src="img/bjoern-dicke.webp" alt="Björn Dicke von Dicke Energieberatung" class="personal-photo">
+          <div class="personal-place"><span>Bonn</span><i></i><span>Köln</span></div>
         </div>
 
+        <div class="personal-copy reveal delay-1">
+          <p class="chapter-label light">05 · DER MENSCH DAHINTER</p>
+          <h2>Am Ende sprechen Sie nicht mit einer Website.</h2>
+          <p class="personal-intro">Ich bin <strong>Björn Dicke.</strong></p>
+          <p>Ich möchte, dass Energieberatung sich nicht wie ein Verkaufsgespräch mit zehn Fachbegriffen anfühlt. Sie sollen verstehen, was passiert, warum es zu Ihrer Situation passt und wen Sie anrufen können, wenn später eine Frage auftaucht.</p>
+          <p>Deshalb beginnt bei mir nicht alles mit einem Tarif. Es beginnt damit, kurz zuzuhören.</p>
+          <a class="text-link light-link" href="#kontakt">Lassen Sie uns kurz sprechen <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter proof-without-hype">
+      <div class="shell proof-grid">
+        <div class="proof-title reveal">
+          <p class="chapter-label">WAS SIE VON UNS NICHT BEKOMMEN</p>
+          <h2>Keine Show. Keine Drucknummer. Keine Hotline-Odyssee.</h2>
+        </div>
+        <div class="proof-statements">
+          <article class="plain-proof reveal"><span>01</span><h3>Verständliche Entscheidungen</h3><p>Sie sollen wissen, was Sie abschließen – nicht einfach nur wo Sie unterschreiben.</p></article>
+          <article class="plain-proof reveal delay-1"><span>02</span><h3>Persönliche Betreuung</h3><p>Eine konkrete Person statt „Ihr Anliegen wurde weitergeleitet“.</p></article>
+          <article class="plain-proof reveal delay-2"><span>03</span><h3>Arbeit, die bei uns bleibt</h3><p>Vergleichen, organisieren und den Überblick behalten ist unser Teil der Abmachung.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter faq" id="fragen">
+      <div class="shell faq-grid">
+        <div class="faq-heading reveal">
+          <p class="chapter-label">NOCH EIN GEDANKE?</p>
+          <h2>Die Fragen, die man meistens erst kurz vor dem Anruf hat.</h2>
+        </div>
         <div class="faq-list reveal delay-1">
-          <details open>
-            <summary>Kostet mich die Beratung wirklich keinen Cent?<span aria-hidden="true">+</span></summary>
-            <p>Ja. Für unsere Beratung und Betreuung zahlen Sie uns nichts. Kommt über uns ein Vertrag zustande, erhalten wir eine Vergütung über den jeweiligen Vertrieb. Sie bekommen von uns keine Rechnung für die Beratung.</p>
+          <details>
+            <summary>Was kostet mich die Beratung?<span>+</span></summary>
+            <p>Keinen Cent direkt an uns. Kommt über uns ein Vertrag zustande, werden wir über unseren Vertrieb vergütet. Sie erhalten von uns keine Beratungsrechnung.</p>
           </details>
           <details>
-            <summary>Ich kümmere mich sowieso jedes Jahr selbst. Was bringt mir das?<span aria-hidden="true">+</span></summary>
-            <p>Dann wissen Sie bereits, wie viel Zeit Vergleichen, Konditionen prüfen und Wechseln kosten kann. Genau diese Arbeit können Sie uns geben – und wir schauen gleichzeitig, ob wir bei Preis, Konditionen oder Energieherkunft noch etwas verbessern können.</p>
+            <summary>Ich wechsle sowieso regelmäßig selbst. Was bringt mir das?<span>+</span></summary>
+            <p>Dann kennen Sie den Aufwand bereits. Sie können uns genau diesen Teil abgeben – und wir schauen gleichzeitig, ob sich bei Konditionen oder Tarifwahl noch etwas verbessern lässt.</p>
           </details>
           <details>
-            <summary>Beraten Sie Privatkunden oder Unternehmen?<span aria-hidden="true">+</span></summary>
-            <p>Beides. Wir trennen das Thema nicht künstlich: Zuhause und im Unternehmen geht es am Ende um dieselbe Frage – wie Sie Energie sinnvoll, verständlich und mit möglichst wenig eigener Arbeit organisieren.</p>
+            <summary>Ist das auch für Gewerbe gedacht?<span>+</span></summary>
+            <p>Ja. Die Beratung richtet sich an Haushalte und Unternehmen. Gerade im Geschäftsalltag soll Energie möglichst wenig Ihrer eigenen Zeit beanspruchen.</p>
           </details>
           <details>
-            <summary>Stellen Sie automatisch auf erneuerbare Energie um?<span aria-hidden="true">+</span></summary>
-            <p>Wir achten bei passenden Stromtarifen bewusst auf erneuerbare Energie und bevorzugen – wo verfügbar und sinnvoll – Angebote mit Herkunft aus Deutschland. Welche Herkunft ein konkreter Tarif tatsächlich ausweist, erklären wir transparent anhand der verfügbaren Tarifinformationen.</p>
+            <summary>Muss ich mich nach der Anfrage direkt entscheiden?<span>+</span></summary>
+            <p>Nein. Zuerst schauen wir uns die Situation an und erklären die Möglichkeiten. Eine Anfrage verpflichtet Sie nicht automatisch zu einem Vertragsabschluss.</p>
           </details>
           <details>
-            <summary>Muss ich nach der Prüfung etwas unterschreiben?<span aria-hidden="true">+</span></summary>
-            <p>Nein. Wir können Ihnen Möglichkeiten zeigen und erklären. Ein Vertrag kommt nur zustande, wenn Sie sich ausdrücklich dafür entscheiden.</p>
-          </details>
-          <details>
-            <summary>Was brauche ich für den ersten Kontakt?<span aria-hidden="true">+</span></summary>
-            <p>Für den Anfang reicht eine kurze Nachricht. Für die konkrete Prüfung ist eine aktuelle Strom- oder Gasrechnung beziehungsweise eine Vertragsübersicht hilfreich.</p>
+            <summary>Was brauche ich für den ersten Kontakt?<span>+</span></summary>
+            <p>Am besten Ihre letzte Strom- oder Gasabrechnung. Wenn die gerade nicht zur Hand ist, können wir trotzdem erst einmal kurz sprechen.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="kontakt">
-      <div class="contact-aura" aria-hidden="true"></div>
-      <div class="container contact-shell">
-        <div class="contact-copy reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Das war's schon</p>
-          <h2>Sie müssen jetzt noch keinen Tarif auswählen. <em>Schreiben Sie einfach kurz.</em></h2>
-          <p>Ein Satz reicht. Wir klären gemeinsam, was Sie brauchen – für Zuhause, Ihr Unternehmen oder beides.</p>
-
-          <div class="contact-promises">
-            <span>Keinen Cent Beratungskosten</span>
-            <span>Persönliche Antwort</span>
-            <span>Kein Vorwissen nötig</span>
+    <section class="final-cta" id="kontakt">
+      <canvas class="final-current" data-final-current aria-hidden="true"></canvas>
+      <div class="shell final-shell">
+        <div class="final-copy reveal">
+          <p class="chapter-label light">JETZT IST ES EIGENTLICH EINFACH</p>
+          <h2>Sollen wir uns darum kümmern?</h2>
+          <p>Ein kurzer Kontakt reicht fürs Erste. Sie müssen nichts vorbereiten – wenn die letzte Rechnung in Reichweite ist, umso besser.</p>
+          <div class="final-actions">
+            <a class="btn btn-primary large magnet" href="tel:+491792675002">0179 2675002 anrufen <span>↗</span></a>
+            <button class="btn btn-ghost light-button" type="button" data-open-message>Nachricht vorbereiten <span>→</span></button>
           </div>
-
-          <div class="contact-setup-note" role="note">
-            <span>Direkter Draht</span>
-            <strong>Sie möchten lieber kurz sprechen? <a class="contact-phone" href="tel:+491792675002">0179 2675002</a></strong>
-          </div>
+          <small class="contact-note">Testkontakt · aktuell keine öffentliche E-Mail hinterlegt</small>
         </div>
 
-        <div class="contact-builder reveal delay-1" data-contact-builder>
-          <div class="builder-head">
-            <span class="builder-status"><i aria-hidden="true"></i> Persönlicher Kontakt</span>
-            <strong>Worum dürfen wir uns kümmern?</strong>
-          </div>
-          <div class="builder-step">
-            <p><span>1</span> Energie</p>
-            <div class="choice-group" role="group" aria-label="Vertragsart">
-              <button class="choice is-active" type="button" data-group="energy" data-value="Strom">Strom</button>
-              <button class="choice" type="button" data-group="energy" data-value="Gas">Gas</button>
-              <button class="choice" type="button" data-group="energy" data-value="Strom und Gas">Beides</button>
-            </div>
-          </div>
-          <div class="builder-step">
-            <p><span>2</span> Was passt gerade?</p>
-            <div class="choice-group choice-group-intent" role="group" aria-label="Anliegen">
-              <button class="choice is-active" type="button" data-group="intent" data-value="prüfen">Einfach prüfen</button>
-              <button class="choice" type="button" data-group="intent" data-value="Arbeit abgeben">Arbeit abgeben</button>
-              <button class="choice" type="button" data-group="intent" data-value="kurz sprechen">Kurz sprechen</button>
-            </div>
-          </div>
-          <div class="builder-preview">
-            <span>Mehr müssen Sie nicht schreiben</span>
-            <p data-message-preview>Hallo Björn, ich möchte meinen Stromvertrag einfach prüfen lassen.</p>
-          </div>
-          <div class="builder-actions">
-            <a class="button button-whatsapp magnetic" href="tel:+491792675002"><span>Jetzt anrufen</span><i aria-hidden="true">↗</i></a>
-            <button class="button button-email magnetic" type="button" data-copy-request><span>Anfragetext kopieren</span><i aria-hidden="true">↗</i></button>
-          </div>
-          <small data-copy-status>Ein kurzer Anruf reicht. Wenn Sie lieber später schreiben möchten, können Sie den vorbereiteten Anfragetext schon kopieren.</small>
+        <div class="final-seal reveal delay-1" aria-hidden="true">
+          <div class="seal-ring ring-a"></div><div class="seal-ring ring-b"></div>
+          <span class="seal-d">D</span>
+          <p>DICKE<br><small>ENERGIEBERATUNG</small></p>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="mobile-contact-bar" aria-label="Schnellkontakt">
-    <a href="tel:+491792675002">Anrufen</a>
-    <a href="#kontakt">Kostenlos anfragen</a>
+  <div class="message-panel" data-message-panel aria-hidden="true">
+    <button class="message-backdrop" type="button" aria-label="Fenster schließen" data-close-message></button>
+    <section class="message-card" role="dialog" aria-modal="true" aria-labelledby="message-title">
+      <button class="message-close" type="button" aria-label="Schließen" data-close-message>×</button>
+      <p class="chapter-label">KURZ & UNKOMPLIZIERT</p>
+      <h2 id="message-title">Nachricht vorbereiten</h2>
+      <p>Nur das Nötigste. Den Rest klären wir persönlich.</p>
+      <form data-message-form>
+        <label>Ihr Name<input name="name" autocomplete="name" required placeholder="Max Mustermann"></label>
+        <label>Worum geht es?
+          <select name="topic">
+            <option>Strom</option><option>Gas</option><option>Strom & Gas</option><option>Noch unsicher</option>
+          </select>
+        </label>
+        <label>Was möchten Sie kurz loswerden? <span>optional</span><textarea name="note" rows="3" placeholder="z. B. Gewerbe, Umzug, aktueller Tarif läuft bald aus …"></textarea></label>
+        <button class="btn btn-primary full" type="submit">Nachricht erstellen <span>→</span></button>
+      </form>
+      <div class="message-result" data-message-result hidden>
+        <p data-message-preview></p>
+        <div class="message-actions">
+          <a class="btn btn-primary" data-sms-link href="sms:+491792675002">Per SMS öffnen <span>↗</span></a>
+          <button class="btn btn-dark" type="button" data-copy-message>Text kopieren</button>
+        </div>
+        <small data-copy-status aria-live="polite"></small>
+      </div>
+    </section>
   </div>
 
   <footer class="site-footer">
-    <div class="footer-skyline" aria-hidden="true"></div>
-    <div class="container footer-top">
-      <a class="brand brand-footer" href="#top" aria-label="Dicke Energieberatung – nach oben">
-        <span class="brand-mark" aria-hidden="true">D</span>
-        <span class="brand-copy"><strong>DICKE</strong><small>ENERGIEBERATUNG</small></span>
-      </a>
-      <p>Energieberatung für Menschen, die ihre Zeit lieber in ihr Leben oder ihr Unternehmen stecken als in Strom- und Gasverträge.</p>
-      <div class="footer-links">
-        <a href="#warum">Warum wir</a>
-        <a href="#entlastung">Was wir übernehmen</a>
-        <a href="#ablauf">Ablauf</a>
-        <a href="#ueber-mich">Über mich</a>
-        <a href="#kontakt">Kontakt</a>
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <span class="footer-d">D</span>
+        <div><strong>DICKE</strong><small>ENERGIEBERATUNG</small></div>
       </div>
+      <p>Energieberatung aus dem Rheinland – für Menschen, die ihre Zeit lieber anders verbringen.</p>
+      <div class="footer-links"><a href="tel:+491792675002">0179 2675002</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span data-year></span> Dicke Energieberatung · Rheinland</span>
-      <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-    </div>
+    <div class="shell footer-bottom"><span>© <span data-year></span> Dicke Energieberatung</span><span>Bonn · Köln · Rheinland</span></div>
   </footer>
 
   <script src="js/script.js" defer></script>
