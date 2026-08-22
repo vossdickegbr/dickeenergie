@@ -137,11 +137,18 @@ box-shadow:0 32px 100px rgba(49,46,34,.1);display:flex;flex-direction:column;ali
 .humor-receipt.is-revealed{opacity:1;filter:none;transform:perspective(1000px) translate3d(48px,0,0) rotateY(-5deg) rotateZ(-1.2deg)}
 .humor-receipt.is-revealed:after{animation:receiptLight 1.25s .55s ease both}
 @keyframes receiptLight{to{transform:translateX(130%)}}
-.humor-kicker{display:block;margin-bottom:7px;font-size:9px;font-weight:900;letter-spacing:.26em;color:#75893e;text-transform:uppercase}
-.humor-receipt p{position:relative;margin:0;font-family:Iowan Old Style,Baskerville,"Times New Roman",serif;font-style:italic;font-size:18px;line-height:1.48;letter-spacing:-.012em}
+.humor-emoji{position:absolute;right:18px;top:8px;font-size:88px;line-height:1;filter:drop-shadow(0 14px 30px rgba(0,0,0,.12));opacity:0;transform:translate3d(14px,-8px,0) rotate(-10deg) scale(.78);transform-origin:center;z-index:0;pointer-events:none;transition:transform .9s .18s cubic-bezier(.18,.86,.22,1),opacity .55s .18s ease}
+.humor-receipt.is-revealed .humor-emoji{opacity:.16;transform:translate3d(0,0,0) rotate(-6deg) scale(1)}
+.humor-kicker{position:relative;z-index:1;display:block;margin-bottom:7px;font-size:9px;font-weight:900;letter-spacing:.26em;color:#75893e;text-transform:uppercase}
+.humor-receipt p{position:relative;z-index:1;margin:0;font-family:Iowan Old Style,Baskerville,"Times New Roman",serif;font-style:italic;font-size:18px;line-height:1.48;letter-spacing:-.012em;max-width:265px}
 .humor-receipt strong{font-weight:600;position:relative;white-space:nowrap}
-.humor-stroke{position:absolute;height:2px;width:92px;right:25px;bottom:14px;background:linear-gradient(90deg,var(--gold),var(--green-2));transform:scaleX(0) rotate(-1deg);transform-origin:left;transition:transform .75s 1.05s var(--ease)}
+.humor-stroke{position:absolute;height:2px;width:92px;right:25px;bottom:14px;background:linear-gradient(90deg,var(--gold),var(--green-2));transform:scaleX(0) rotate(-1deg);transform-origin:left;transition:transform .75s 1.05s var(--ease);z-index:1}
 .humor-receipt.is-revealed .humor-stroke{transform:scaleX(1) rotate(-1deg)}
+@media(max-width:700px){
+  .humor-emoji{font-size:72px;right:10px;top:12px;opacity:0}
+  .humor-receipt.is-revealed .humor-emoji{opacity:.13}
+  .humor-receipt p{max-width:none}
+}
 
 .final-cta{min-height:auto}
 .final-shell-form{grid-template-columns:minmax(0,1fr) 320px;gap:90px;padding-block:125px;align-items:center}
