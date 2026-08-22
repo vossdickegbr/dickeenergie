@@ -38,6 +38,18 @@
   });
   $$('a', nav || document).forEach(a => a.addEventListener('click', closeMenu));
 
+  // iOS/Safari can keep transformed fixed navigation layers composited after closing.
+  // Always reset the mobile menu when the page/navigation state changes.
+  addEventListener('pageshow', closeMenu);
+  addEventListener('hashchange', closeMenu);
+  addEventListener('orientationchange', closeMenu);
+  addEventListener('resize', () => {
+    if (innerWidth > 760) closeMenu();
+  }, { passive: true });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
   // Reveal observer
   if (!reduceMotion && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
