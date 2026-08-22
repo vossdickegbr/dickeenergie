@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dickeenergie.de/sitemap.xml
+Sitemap: https://vossunddicke.de/sitemap.xml
