@@ -63,6 +63,11 @@
   <main id="main">
     <section class="hero" id="top" data-hero>
       <div class="hero-sky" aria-hidden="true"></div>
+      <div class="hero-sun" aria-hidden="true">
+        <div class="hero-sun-core"></div>
+        <div class="hero-sun-halo"></div>
+        <div class="hero-sun-beam"></div>
+      </div>
       <div class="hero-city-wrap" aria-hidden="true" data-city-parallax>
         <img src="img/dicke-skyline.webp" alt="" class="hero-city">
         <div class="city-reflection"></div>
@@ -404,9 +409,14 @@
               <p data-wa-preview>Wählen Sie oben kurz Strom, Gas oder beides und ob es um Sie privat oder Ihr Unternehmen geht.</p>
             </div>
 
-            <a class="btn btn-whatsapp large is-disabled" data-wa-link href="#" aria-disabled="true" rel="noopener">
-              Direkt über WhatsApp senden <span>↗</span>
-            </a>
+            <div class="contact-action-row">
+              <a class="btn btn-whatsapp large is-disabled" data-wa-link href="#" aria-disabled="true" rel="noopener">
+                Direkt über WhatsApp senden <span>↗</span>
+              </a>
+              <a class="btn btn-call large" href="tel:+491792675002" aria-label="Direkt anrufen unter 0179 2675002">
+                Direkt anrufen <span>☎</span>
+              </a>
+            </div>
             <small class="wa-privacy">WhatsApp öffnet sich erst, wenn Sie auf den Button tippen. Bis dahin wird nichts versendet.</small>
           </form>
         </div>
